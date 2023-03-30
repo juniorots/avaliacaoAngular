@@ -21,10 +21,9 @@ import { ClienteService } from "./cliente.service";
     BrowserModule,
     AppRoutingModule,    
     ReactiveFormsModule,
-    HttpClientModule,
-    ClienteService,
+    HttpClientModule,    
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
