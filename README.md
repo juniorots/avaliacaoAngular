@@ -1,4 +1,4 @@
-# avaliacao-front-angular
+# Avaliacao Angular
 
 avaliacao-front : Prova de conceito demonstrativo sobre tecnicas de programacao em Angular Typesript;
 
@@ -14,5 +14,16 @@ nvm use <VERSAO>
 npm install @angular/cli -g
 
 ng version [Util apos a versao 14]
+
+# Bootstrap
+npm install bootstrap --save
+
+# Start Server
+ng serve -o
+
+# Novo component
+ng g c <nome>-add --skip-tests
+
+
 
 
