@@ -1,1 +1,20 @@
-<p>cliente-get works!</p>
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <td>Nome</td>
+        <td>CPF</td>        
+    </tr>
+    </thead>
+  
+    <tbody>
+        <tr *ngFor="let cliente of clientes">
+            <td>{{ cliente.cliente_nome }}</td>
+            <td>{{ cliente.cliente_cpf }}</td>
+            <td>
+                <a [routerLink]="['/avaliacao/cliente/editar', cliente._id]" 
+                class="btn btn-primary">Alterar</a>
+            </td>
+            <td><a [routerLink]="deleteCliente(cliente._id)" class="btn btn-danger">Excluir</a></td>
+        </tr>
+    </tbody>
+  </table>
