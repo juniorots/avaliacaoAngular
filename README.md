@@ -24,6 +24,9 @@ ng serve -o
 # Novo component
 ng g c <nome>-add --skip-tests
 
+# Indicador de Navegacao
+npm install ng2-slim-loading-bar --save
+
 
 
 
