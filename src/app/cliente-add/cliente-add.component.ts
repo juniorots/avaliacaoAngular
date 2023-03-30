@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 })
 export class ClienteAddComponent implements OnInit{
   
-  angForm: FormGroup | undefined;
+  angForm!: FormGroup;
   constructor(private fb: FormBuilder) {
     this.createForm();
   }
