@@ -7,6 +7,8 @@ import { ClienteAddComponent } from './cliente-add/cliente-add.component';
 import { ClienteGetComponent } from './cliente-get/cliente-get.component';
 import { ClienteEditComponent } from './cliente-edit/cliente-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ClienteService } from "./cliente.service";
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,    
     ReactiveFormsModule,
+    HttpClientModule,
+    ClienteService,
   ],
   providers: [],
   bootstrap: [AppComponent]
